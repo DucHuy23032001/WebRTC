@@ -70,21 +70,6 @@ navigator.mediaDevices
       if (peers[userId]) peers[userId].close();
       speakText(`user ${userId} leved`);
     });
-
-    // document.addEventListener("keydown", (e) => {
-    //   if (e.which === 13 && chatInputBox.value != "") {
-    //     socket.emit("message", chatInputBox.value);
-    //     chatInputBox.value = "";
-    //   }
-    // });
-
-    // socket.on("createMessage", (msg) => {
-    //   console.log(msg);
-    //   let li = document.createElement("li");
-    //   li.innerHTML = msg;
-    //   all_messages.append(li);
-    //   main__chat__window.scrollTop = main__chat__window.scrollHeight;
-    // });
   });
 
 peer.on("call", function (call) {
